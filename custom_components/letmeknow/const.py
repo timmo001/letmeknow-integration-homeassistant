@@ -10,4 +10,4 @@ DOMAIN = "letmeknow"
 
 CONF_DEFAULT_PORT: Final[int] = 8080
 
-type LMKConfigEntry = ConfigEntry[LMKClient]
+type LMKConfigEntry = ConfigEntry[LMKClient] # pylint: disable=unsubscriptable-object
