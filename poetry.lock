@@ -2,28 +2,27 @@
 
 [[package]]
 name = "acme"
-version = "1.31.0"
+version = "2.7.4"
 description = "ACME protocol implementation in Python"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "acme-1.31.0-py3-none-any.whl", hash = "sha256:15134d4e404937d8464ee63a16eaf11adbe2f184960e99aa60410648a53f13ac"},
-    {file = "acme-1.31.0.tar.gz", hash = "sha256:f5e13262fa1101c38dd865378ac8b4639f819120eb66c5538fc6c09b7576fc53"},
+    {file = "acme-2.7.4-py3-none-any.whl", hash = "sha256:c72662887ec1c5ddc3c2e6103b89a22e12d67befc44f14b3d41874f3236d7a6b"},
+    {file = "acme-2.7.4.tar.gz", hash = "sha256:b9d27f49156b111e207be4aae6fc468c273572c99461f05fd65d679e338322f6"},
 ]
 
 [package.dependencies]
-cryptography = ">=2.5.0"
+cryptography = ">=3.2.1"
 josepy = ">=1.13.0"
-PyOpenSSL = ">=17.5.0"
+PyOpenSSL = ">=17.5.0,<23.1.0 || >23.1.0"
 pyrfc3339 = "*"
 pytz = ">=2019.3"
 requests = ">=2.20.0"
-requests-toolbelt = ">=0.3.0"
 setuptools = ">=41.6.0"
 
 [package.extras]
 docs = ["Sphinx (>=1.0)", "sphinx-rtd-theme"]
-test = ["pytest", "pytest-xdist", "typing-extensions"]
+test = ["importlib-resources (>=1.3.1)", "pytest", "pytest-xdist", "typing-extensions"]
 
 [[package]]
 name = "aiohttp"
@@ -775,23 +774,24 @@ files = [
 
 [[package]]
 name = "hass-nabucasa"
-version = "0.67.1"
+version = "0.75.1"
 description = "Home Assistant cloud integration by Nabu Casa, Inc."
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "hass-nabucasa-0.67.1.tar.gz", hash = "sha256:05d9698a02cad3ac80a7edd0245a619d4c50995217c493473e3f0941b9b44fb5"},
-    {file = "hass_nabucasa-0.67.1-py3-none-any.whl", hash = "sha256:37b61f2617344bd8e3b3dcc190f8c48926565d0758f4905069b675f5b28b0019"},
+    {file = "hass-nabucasa-0.75.1.tar.gz", hash = "sha256:c3ee856a81301c38016e6b2a5ae36fa633975df53e6163b278696284d00a3647"},
+    {file = "hass_nabucasa-0.75.1-py3-none-any.whl", hash = "sha256:032531c9e36ba3beaa65d8d5178c0a5b53753a10afce5b93fd3fc2e3c782be99"},
 ]
 
 [package.dependencies]
-acme = "1.31.0"
+acme = "2.7.4"
 aiohttp = ">=3.6.1"
 atomicwrites-homeassistant = "1.4.1"
 attrs = ">=19.3"
+ciso8601 = ">=2.3.0"
 cryptography = ">=2.8"
-pycognito = "2022.12.0"
-snitun = "0.35.0"
+pycognito = "2023.5.0"
+snitun = "0.36.2"
 
 [[package]]
 name = "home-assistant-bluetooth"
@@ -1356,13 +1356,13 @@ files = [
 
 [[package]]
 name = "pycognito"
-version = "2022.12.0"
+version = "2023.5.0"
 description = "Python class to integrate Boto3's Cognito client so it is easy to login users. With SRP support."
 optional = false
 python-versions = "*"
 files = [
-    {file = "pycognito-2022.12.0-py3-none-any.whl", hash = "sha256:877876da291c53f427379a3dfd3ec43bc4421101d26134af32899e34c72dfe71"},
-    {file = "pycognito-2022.12.0.tar.gz", hash = "sha256:49cc07420f3862942ee7e6903633d7a12f7dd12c3bd2e7546beff5815513d92f"},
+    {file = "pycognito-2023.5.0-py3-none-any.whl", hash = "sha256:0a73c2bdc966465df3a61cba445f58beee9734638be7b10681792725651168eb"},
+    {file = "pycognito-2023.5.0.tar.gz", hash = "sha256:3843cfff56969f7c4b0b2fd499877941d0bf33e39c4541dc896c2b83bef5db24"},
 ]
 
 [package.dependencies]
@@ -1600,20 +1600,6 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
-name = "requests-toolbelt"
-version = "1.0.0"
-description = "A utility belt for advanced users of python-requests"
-optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-files = [
-    {file = "requests-toolbelt-1.0.0.tar.gz", hash = "sha256:7681a0a3d047012b5bdc0ee37d7f8f07ebe76ab08caeccfc3921ce23c88d5bc6"},
-    {file = "requests_toolbelt-1.0.0-py2.py3-none-any.whl", hash = "sha256:cccfdd665f0a24fcf4726e690f65639d272bb0637b9b92dfd91a5568ccf6bd06"},
-]
-
-[package.dependencies]
-requests = ">=2.0.1,<3.0.0"
-
-[[package]]
 name = "rsa"
 version = "4.9"
 description = "Pure-Python RSA implementation"
@@ -1683,13 +1669,13 @@ files = [
 
 [[package]]
 name = "snitun"
-version = "0.35.0"
+version = "0.36.2"
 description = "SNI proxy with TCP multiplexer"
 optional = false
 python-versions = "*"
 files = [
-    {file = "snitun-0.35.0-py3-none-any.whl", hash = "sha256:99f97963a3173c54495f1509f868194aa77037fc853738f40befa455f501472a"},
-    {file = "snitun-0.35.0.tar.gz", hash = "sha256:cb32bacc55c73c68d2285e9d1f43b096238901fd0ff72c03f26e1c01e1fbd84f"},
+    {file = "snitun-0.36.2-py3-none-any.whl", hash = "sha256:f8f142a3b57aea887a3091a8182daefe3bb105e0d30f3aa9e2164ea1d00f6577"},
+    {file = "snitun-0.36.2.tar.gz", hash = "sha256:a51b4331acb77d72e6f9d6d34a9721d9411d09c804d75abbbccceb76d90076d1"},
 ]
 
 [package.dependencies]
@@ -1950,4 +1936,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "b654ac7f07793a897119e48c765269e634e55f33c843ada37b4cd821c83d3262"
+content-hash = "75f3a48ce00f8485cf565a5c364fd1ad21492f44aeb5b1f5f732093ecba87fad"
