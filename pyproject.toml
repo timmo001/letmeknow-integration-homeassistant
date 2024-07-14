@@ -22,7 +22,7 @@ homeassistant = "^2023.6"
 
 [tool.poetry.group.dev.dependencies]
 hass-nabucasa = "0.67.1"
-pylint = "3.2.4"
+pylint = "3.2.5"
 
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/timmo001/homeassistant-integration-letmeknow/issues"
