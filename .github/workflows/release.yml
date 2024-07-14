@@ -29,9 +29,9 @@ jobs:
         shell: bash
         run: |
           cd "${{ github.workspace }}/custom_components/letmeknow"
-          zip letmeknow-integration-homeassistant.zip -r ./
+          zip letmeknow.zip -r ./
       - name: "⬆ Upload zip to release"
         uses: fnkr/github-action-ghr@v1
         env:
-          GHR_PATH: ${{ github.workspace }}/custom_components/letmeknow/letmeknow-integration-homeassistant.zip
+          GHR_PATH: ${{ github.workspace }}/custom_components/letmeknow/letmeknow.zip
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
