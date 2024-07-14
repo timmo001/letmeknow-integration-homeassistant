@@ -1,0 +1,15 @@
+{
+  "domain": "letmeknow",
+  "name": "LetMeKnow",
+  "codeowners": ["@timmo001"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://www.home-assistant.io/integrations/letmeknow",
+  "homekit": {},
+  "iot_class": "local_push",
+  "loggers": ["letmeknowclient"],
+  "requirements": ["letmeknowclient==0.4.1"],
+  "ssdp": [],
+  "zeroconf": [],
+  "version": "0.0.0"
+}

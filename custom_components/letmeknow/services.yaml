@@ -1,0 +1,38 @@
+send_notification:
+  fields:
+    config_entry:
+      required: true
+      selector:
+        config_entry:
+          integration: letmeknow
+    title:
+      required: false
+      selector:
+        text:
+    subtitle:
+      required: false
+      selector:
+        text:
+    content:
+      required: false
+      selector:
+        text:
+    image_url:
+      required: false
+      selector:
+        text:
+          type: url
+    timeout:
+      required: false
+      selector:
+        number:
+          min: 1
+          max: 60000
+          step: 1
+          unit_of_measurement: milliseconds
+          mode: slider
+    targets:
+      required: false
+      selector:
+        text:
+          multiple: true

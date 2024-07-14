@@ -1,0 +1,66 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "could_not_connect": {
+            "message": "Could not connect to the LetMeKnow device."
+        },
+        "could_not_register": {
+            "message": "Could not register with the LetMeKnow device."
+        },
+        "invalid_image_dimensions": {
+            "message": "Image dimensions must be provided if an image URL is set."
+        }
+    },
+    "services": {
+        "send_notification": {
+            "description": "Send a notification to a device.",
+            "fields": {
+                "config_entry": {
+                    "description": "The config entry to use for this service.",
+                    "name": "Config Entry"
+                },
+                "content": {
+                    "description": "The content of the notification.",
+                    "name": "Content"
+                },
+                "image_url": {
+                    "description": "A URL to an image to show.",
+                    "name": "Image URL"
+                },
+                "subtitle": {
+                    "description": "The subtitle of the notification.",
+                    "name": "Subtitle"
+                },
+                "targets": {
+                    "description": "The target clients to send to. Defaults to all clients.",
+                    "name": "Targets"
+                },
+                "timeout": {
+                    "description": "The time in milliseconds to show the notification.",
+                    "name": "Timeout"
+                },
+                "title": {
+                    "description": "The title of the notification.",
+                    "name": "Title"
+                }
+            },
+            "name": "Send notification"
+        }
+    }
+}
