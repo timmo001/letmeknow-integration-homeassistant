@@ -1,6 +1,6 @@
 # Home Assistant Integration - LetMeKnow
 
-LetMeKnow integration for [Home Assistant](https://www.home-assistant.io/).
+[LetMeKnow](https://github.com/timmo001/letmeknow) integration for [Home Assistant](https://www.home-assistant.io/).
 
 ## Installation
 
