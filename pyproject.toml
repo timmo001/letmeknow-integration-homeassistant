@@ -19,6 +19,7 @@ packages = []
 [tool.poetry.dependencies]
 python = "^3.12"
 homeassistant = "^2023.6"
+letmeknowclient = "1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 hass-nabucasa = "0.75.1"
