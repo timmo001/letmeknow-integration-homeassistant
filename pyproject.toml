@@ -23,7 +23,7 @@ letmeknowclient = "1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 hass-nabucasa = "0.75.1"
-pylint = "3.2.5"
+pylint = "3.2.7"
 
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/timmo001/homeassistant-integration-letmeknow/issues"
